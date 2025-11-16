@@ -314,14 +314,14 @@ def main():
         
         # 1. Database Setup
         st.header("1. Database Setup")
-        if not create_database(status_db_setup):
-            return
+        #if not create_database(status_db_setup):
+         ##   return
 
-        if not create_table(status_table_house):
-            return
+        #if not create_table(status_table_house):
+         #   return
 
         # 2. Data Preparation
-        st.header("2. Data Preparation & Feature Engineering")
+       # st.header("2. Data Preparation & Feature Engineering")
         
         # Call clean_data once. If successful, cached_df holds the result.
         with st.spinner("Processing data..."):
